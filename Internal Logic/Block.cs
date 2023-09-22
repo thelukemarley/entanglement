@@ -85,7 +85,6 @@ public class Block : GridObj
             if (!dir.SequenceEqual(dirMove)) return false;
             else return true;
         }
-        if (skipTopCheck && skipEntCheck && entangledPair != null) return false; //Hardcoded case for checking flipped gravity weight if neither block moves
         isTryingToMove = true;
         dirMove = dir;
         grid.toUpdate.Add(this);
